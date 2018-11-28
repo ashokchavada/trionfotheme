@@ -310,7 +310,7 @@ nav ul a.btn{
   font-size: 20px;
   text-align: center;
   color: #231F20;
-  padding: 30px 0 14px 0;
+  padding: 20px 0 14px 0;
 }
 
 .trionfo-usp .usp ul{
@@ -472,7 +472,7 @@ nav ul a.btn{
   border-radius: 100px; 
   font-family: 'Open Sans';
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 3.2;
   font-size: 13px;
   color: #FFFFFF;
@@ -994,6 +994,10 @@ color: #69707A;
 /*Small devices (landscape phones, 576px and up)*/
 @media (max-width: 576px) {
 
+  nav .brand-logo {
+    padding-top: 3px;
+  }
+
   .hero_content .inner_hero_content{
     text-align: center;
   }
@@ -1100,7 +1104,6 @@ color: #69707A;
     padding: 100px 0 60px 0;
   }
 
-
   .hero_content .inner_hero_content .btn-downlad-white-paper {
     width: 230px;
     height: 40px;
@@ -1114,5 +1117,21 @@ color: #69707A;
 
   .hero_content .inner_hero_content .awards_banner img {
     height: 22px;
+  }
+
+  .our-solutions h1 {
+    font-size: 22px;
+  }
+
+  .explainer-video .overlay h3 {
+    line-height: 30px;
+  }
+
+  .explainer-video .overlay p {
+    padding-top: 14px;
+  }
+
+  .footer_trionfo h4{
+    padding-top: 20px;
   }
 }
