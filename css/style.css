@@ -1,0 +1,1118 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+/* @font-face{
+  font-family: 'arialRegular';
+  src: url('../fonts/arial.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'arialBold';
+  src: url('../fonts/arialbd.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+
+h1, h2, h3, h4, p, span{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  background: #F6FAFF;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  /* box-shadow: none; */
+  height: 90px;
+  padding: 20px 0 20px 0;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  z-index: 9999;
+}
+
+.nav-up{
+  top: -90px;
+}
+
+nav ul {
+  /* text-align: center; */
+}
+nav ul li {
+  display: inline;
+  float: none;
+}
+
+nav ul li a {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #231F20;
+  display: inline-block;
+  padding: 0;
+  margin-left: 30px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+nav ul li:first-child{
+  margin-left: 0;
+}
+
+nav ul li a:hover{
+  background: none;
+  color: #1FBCEC !important;
+}
+
+nav ul li.active {
+  background: none;
+  color: #1FBCEC;
+}
+
+nav .sidenav-trigger i{
+  color: #000;
+  padding-top: 0px;
+}
+
+nav .brand-logo {
+  padding-top: 6px;
+}
+
+/* .hero .brand-logo img{
+    height: 24px;
+    margin-top: 16px;
+} */
+
+/* nav.nav-center ul {
+  text-align: center;
+}
+nav.nav-center ul li {
+  display: inline;
+  float: none;
+}
+nav.nav-center ul li a {
+  display: inline-block;
+} */
+
+/* 
+nav ul{
+  transform: translateX(32%);
+  webkit-transform: translateX(-32%);
+} */
+
+.nav-flex{    
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  align-items: center;
+  float: right;
+}
+
+.hero .nav-wrapper ul li a{
+  color: black;
+}
+
+nav .btn-get-in-touch{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 700;
+  color: #FFFFFF !important;
+  height: 40px;
+  line-height: 3.5;
+  background: #32C6F4;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.16)!important;
+  border-radius: 100px;
+  padding: 0 26px 0 26px;
+  margin-left: 30px;
+}
+
+nav .btn-get-in-touch:hover{
+  background: #0895C1;
+  box-shadow: none;
+}
+
+nav ul a.btn{
+  margin-top: 12px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.sidenav{
+  z-index: 9999;
+}
+
+.sidenav .btn-get-in-touch{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 700;
+  color: #FFFFFF !important;
+  height: 40px;
+  line-height: 3.5;
+  background: #32C6F4;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.16)!important;
+  border-radius: 100px;
+  padding: 0 24px 0 24px;
+  margin-left: 30px;
+  margin-top: 18px;
+}
+
+.sidenav .btn-get-in-touch:hover{
+  background: #0895C1;
+  box-shadow: none;
+}
+
+.hero_content{
+  background: #1FBCEC; 
+  margin-top: 90px;
+  clip-path: polygon(0 0, 100% 0, 100% 91%, 0 100%);
+}
+
+.hero_content .inner_hero_content{
+  background: url(../img/hero_banner_img.png) no-repeat;
+  background-repeat:no-repeat;
+  background-size: cover;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.hero_content .inner_hero_content .overlay{
+  background: linear-gradient(90deg, rgba(48, 103, 155, 0.95) 41.87%, rgba(48, 103, 155, 0) 100%);
+  padding: 110px 0 110px 0; 
+}
+
+
+.hero_content .inner_hero_content .slick-dots{
+  text-align: left;
+}
+
+.hero_content .inner_hero_content h1{
+  font-family: 'Open Sans';
+  font-weight: bold;
+  line-height: normal;
+  font-size: 42px;
+  color: #FFFFFF;
+  margin-bottom: 0px;
+}
+
+.hero_content .inner_hero_content p{
+  font-family: 'Open Sans';
+  font-weight: normal;
+  line-height: 29px;
+  font-size: 19px;
+  color: #FFFFFF;
+  padding: 20px 0 34px 0;
+}
+
+.hero_content .inner_hero_content .btn-downlad-white-paper{
+  width: 258px;
+  height: 48px;
+  background: #32C6F4;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.16);
+  border-radius: 100px; 
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  line-height: 3.5;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.hero_content .inner_hero_content .btn-downlad-white-paper:hover{
+  background: #0895C1;
+  box-shadow: none;
+}
+
+.hero_content .inner_hero_content .banner-video-icon img{
+  padding-top: 18px;
+}
+
+.hero_content .inner_hero_content .awards_banner{
+  padding-top: 47px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #1FBCEC;
+}
+
+.hero_content .inner_hero_content .awards_banner strong{
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 19px;
+  padding-right: 20px;
+}
+
+/* Client logos images */
+.trionfo_client_logos img{
+  width: auto;
+}
+
+/* USP section style */
+.trionfo-usp{
+  padding: 90px 0 70px 0;
+  background: #F6FAFF;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  /* transform-origin: left bottom; */
+  /* left: 0;
+  top: 0; */
+  /* clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  z-index: -9999; */
+  /* transform-origin: left bottom; */
+  transform: skew(0deg, -2deg);
+  margin-top: 20px;
+}
+
+.trionfo-usp .container{
+  transform: skew(0deg, 2deg);
+}
+
+.trionfo-usp .flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.trionfo-usp .usp{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  padding: 50px 40px;
+  /* z-index: 9999; */
+  /* min-height: 523px; */
+  height: 100%;
+}
+
+.trionfo-usp .usp h3{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 20px;
+  text-align: center;
+  color: #231F20;
+  padding: 30px 0 14px 0;
+}
+
+.trionfo-usp .usp ul{
+  margin: 0;
+}
+
+.trionfo-usp .usp ul li{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 23px;
+  font-size: 14px;
+  text-align: left;
+  color: #69707A;
+  padding-bottom: 8px;
+}
+
+.trionfo-usp .usp ul li:last-child{
+  padding-bottom: 0;
+}
+
+.trionfo-usp .usp ul:not(.browser-default)>li {
+  list-style-type: disc;
+}
+
+/* .trionfo-usp .usp p{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 23px;
+  font-size: 14px;
+  text-align: left;
+  color: #69707A;
+  padding-bottom: 8px;
+} */
+
+.trionfo-usp .usp p:last-child{
+  padding-bottom: 0;
+}
+
+/* Our solutions design */
+.our-solutions{
+  padding: 80px 0 60px 0;
+}
+
+.our-solutions h1{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 48px;
+  font-size: 28px;
+  text-align: center;
+  color: #231F20;
+  padding-bottom: 20px;
+}
+
+.our-solutions .solution-enable{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.our-solutions .slick-slide img{
+  width: 100%;
+}
+
+.our-solutions .solution-enable h3{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 22px;
+  color: #231F20;
+  padding-bottom: 6px;
+}
+
+.our-solutions .solution-enable span{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 15px;
+  color: #A5AFBE;
+}
+
+.our-solutions .solution-enable p{
+  padding-top: 14px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 25px;
+  font-size: 15px;
+  color: #69707A;
+}
+
+
+.our-solutions .solution-enable .btn-learn-more{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3;
+  font-size: 13px;
+  color: #FFFFFF;
+  width: 148px;
+  height: 40px;
+  background: #32C6F4;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.16);
+  border-radius: 100px;
+  margin-top: 20px;
+}
+
+/* .slick-dots li.slick-active button:before {
+  color:#32C6F4 !important;
+} */
+
+.our-solutions .solution-enable .btn-learn-more:hover{
+  background: #0895C1;
+}
+
+/* Who is trioonfo style starts */
+.who-is-trionfo{
+  padding: 80px 0 60px 0;
+  background: #F6FAFF;
+  transform: skew(0deg, -2deg);
+}
+
+.who-is-trionfo .container{
+  transform: skew(0deg, 2deg);
+}
+
+.who-is-trionfo h1{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  line-height: 48px;
+  font-size: 28px;
+  text-align: center;
+  color: #231F20;
+}
+
+.who-is-trionfo p{
+  width: 970px;
+  margin: 0 auto;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 30px;
+  font-size: 15px;
+  text-align: center;
+  color: #69707A;
+}
+
+.who-is-trionfo .btn-learn-more{
+  margin-top: 28px;
+  width: 148px;
+  height: 40px;
+  background: #32C6F4;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.16);
+  border-radius: 100px; 
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  line-height: 3.2;
+  font-size: 13px;
+  color: #FFFFFF;
+}
+
+.who-is-trionfo .btn-learn-more:hover{
+  background: #0895C1;
+  box-shadow: none;
+}
+
+/* Clients review section style */
+.client-reviews{
+  padding: 80px 0 0 0;
+}
+
+.client-reviews h1{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  line-height: 48px;
+  font-size: 28px;
+  text-align: center;
+  color: #231F20;
+  padding-bottom: 50px;
+}
+
+.client-reviews .feedbacks{
+  display: flex;
+  align-items: center;
+}
+
+.client-reviews .review-small{
+  padding: 37px 24px;
+  background: #FFFFFF;
+  border: 1px solid #EFEFEF;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+}
+
+.client-reviews .review-small #client_name{
+  font-family: 'Open Sans';
+  font-weight: bold;
+  line-height: normal;
+  font-size: 15px;
+  text-align: center;
+  color: #32C6F4;
+  padding-top: 8px;
+}
+
+.client-reviews .review-small #client_position{
+  line-height: normal;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  color: #231F20;
+  padding-top: 5px;
+}
+
+.client-reviews .review-small #client_feedback{
+  padding-top: 10px;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+  color: #69707A;
+}
+
+.client-reviews .review-big{
+  padding: 50px 30px;
+  background: #FFFFFF;
+  border: 1px solid #EFEFEF;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+.client-reviews .review-big #client_name{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #32C6F4;
+  padding-top: 15px;
+}
+
+.client-reviews .review-big #client_position{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px;
+  text-align: center;
+  color: #231F20;
+  padding-top: 7px;
+}
+
+.client-reviews .review-big #client_feedback{
+  padding-top: 14px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 25px;
+  font-size: 15px;
+  text-align: center;
+  color: #69707A;
+}
+
+.client-reviews .row .col{
+  padding: 0;
+}
+
+
+/* Explainer video */
+.explainer-video{
+  padding: 80px 0 0 0;
+}
+
+.explainer-video .video-content{
+  background: url(../img/video-image.png) no-repeat;
+  background-size: cover;
+}
+
+.explainer-video .overlay{
+  padding: 150px 0 150px 0;
+  background: rgba(48, 103, 155, 0.8);
+}
+
+
+.explainer-video .overlay h3{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  line-height: 48px;
+  font-size: 28px;
+  color: #FFFFFF;
+}
+
+.explainer-video .overlay p{
+  margin: 0 auto;
+  width: 564px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 30px;
+  font-size: 15px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* get in touch style starts */
+.get-in-touch{
+  padding: 0 0 130px 0;
+  background: #F6FAFF;
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+}
+
+.get-in-touch h1{
+  padding-top: 80px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 28px;
+  text-align: center;
+  color: #231F20;
+  padding-bottom: 30px;
+  width: 568px;
+  margin: 0 auto;
+}
+
+.get-in-touch .row{    
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.get-in-touch input[type=text]{
+  background: #FFFFFF;
+  border: 1px solid #D5D5D5;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding-left: 14px;
+}
+
+.select-wrapper input.select-dropdown{
+  font-family: 'Open Sans';
+  line-height: normal;
+  font-size: 13px;
+  color: #A5AFBE;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]){
+  border:1px solid #1FBCEC;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+input.valid[type=text]:not(.browser-default){
+  border-bottom: 1px solid #D5D5D5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.select-wrapper input.select-dropdown:focus{
+  border-bottom: 1px solid #D5D5D5;
+}
+
+.dropdown-content li>a, .dropdown-content li>span {
+  font-size: 16px;
+  color: #1FBCEC;
+  display: block;
+  line-height: 22px;
+  padding: 14px 16px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: 'Open Sans';
+  line-height: normal;
+  font-size: 13px;
+  color: #A5AFBE;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-family: 'Open Sans';
+  line-height: normal;
+  font-size: 13px;
+  color: #A5AFBE;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-family: 'Open Sans';
+  line-height: normal;
+  font-size: 13px;
+  color: #A5AFBE;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-family: 'Open Sans';
+  line-height: normal;
+  font-size: 13px;
+  color: #A5AFBE;
+}
+
+.get-in-touch form .row{
+  margin-bottom: 0px;
+}
+
+.get-in-touch form .input-field{
+  margin-bottom: 0px;
+}
+
+/* .get-in-touch form .select-dropdown{
+  background: url('../img/usp_ancillary_carrier.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  float: right;
+  padding-left: 30px;
+  background-size: 20px;
+} */
+
+.select-wrapper input.select-dropdown{
+  position: initial;
+}
+
+/* Footer style */
+.footer_trionfo{
+  margin-top: 40px;
+  color: #000;
+}
+
+.footer_trionfo h1{
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 0px;
+}
+
+.footer_trionfo p{
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 12px;
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+
+.footer_trionfo img{
+  height: auto;
+}
+
+.footer_trionfo .footer_content{
+  padding-top: 40px;
+}
+
+.footer_trionfo .footer_content p{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 25px;
+  font-size: 15px;
+  color: #69707A;
+  margin-top: 8px;
+}
+
+.footer_trionfo h4{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #32C6F4;
+  margin-bottom: 0px; 
+}
+
+.footer_trionfo ul{
+  margin-top: 24px;
+}
+
+.footer_trionfo li{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 25px;
+  font-size: 15px;
+  color: #69707A;
+  margin-top: 8px;
+}
+
+.footer_trionfo li:first-child{
+  margin-top: 0;
+}
+
+.footer_trionfo li a{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 15px;
+  color: #69707A;
+}
+
+.footer_trionfo li a:hover{
+  color: #0895C1;
+}
+
+.footer_trionfo li strong{
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+font-size: 15px;
+color: #69707A;
+}
+
+.get-in-touch form .btn-submit{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 700;
+  color: #FFFFFF;
+  height: 40px;
+  line-height: 3.5;
+  background: #32C6F4;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.16)!important;
+  border-radius: 100px;
+  padding: 0 74px 0 74px;
+  margin-top: 20px;
+}
+
+.get-in-touch form .btn-submit:hover{
+  background: #0895C1;
+  box-shadow: none;
+}
+
+.sidenav-overlay{
+  z-index: 900;
+}
+
+.footer_trionfo .trionfo_copyrights{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px;
+  color: #929292;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 1024px) {
+
+  
+
+}
+
+@media (min-width: 993px){
+  
+  .row .col.l4 {
+      margin-left: 0;
+  }
+  /* .brand-logo img {
+    height: 31px;
+  }
+
+  nav ul li a{
+    font-size: 12px;
+    margin-left: 15px;
+  }
+
+  nav .btn-get-in-touch{
+    font-size: 11px;
+    line-height: 3.9;
+  }
+  .who-is-trionfo p {
+    width: auto;
+  } */
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+  .brand-logo img {
+    height: auto;
+  }
+
+  .content-wrapper{
+    width: auto;
+  }
+
+  .nav-flex .btn-get-in-touch{
+    display: none;
+  }
+
+  .trionfo_client_logos img {
+    width: 100%;
+  }
+
+  .trionfo-usp .row .col {
+    margin-bottom: 22px;
+  }
+
+  .trionfo-usp .row .col:last-child {
+    margin-bottom: 0px;
+  }
+
+  .who-is-trionfo p {
+      width: auto;
+  }
+
+  .our-solutions .solution-enable {
+    text-align: center;
+  }
+
+  .slick-dots {
+    bottom: -45px;
+  }
+
+  .client-reviews .feedbacks {
+    flex-wrap: wrap;
+  }
+
+  .client-reviews .row .col {
+    margin-bottom: 22px;
+  }
+
+  .client-reviews .row .col:last-child {
+    margin-bottom: 0px;
+  }
+
+  .client-reviews .review-small{
+    padding: 50px 30px;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .client-reviews .review-small #client_name{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #32C6F4;
+    padding-top: 15px;
+  }
+  
+  .client-reviews .review-small #client_position{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    color: #231F20;
+    padding-top: 7px;
+  }
+  
+  .client-reviews .review-small #client_feedback{
+    padding-top: 14px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 25px;
+    font-size: 15px;
+    text-align: center;
+    color: #69707A;
+  }
+  .footer_trionfo img {
+    height: 30px;
+  }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+
+  .hero_content .inner_hero_content{
+    text-align: center;
+  }
+
+  .hero_content .inner_hero_content .awards_banner {
+    padding-top: 18px;
+    justify-content: center;
+  }
+
+  .hero_content .inner_hero_content h1 {
+    font-size: 32px;
+  }
+
+  .hero_content .inner_hero_content p {
+    line-height: 26px;
+    font-size: 14px;
+    padding: 14px 0 28px 0;
+  }
+
+  .hero_content .inner_hero_content .awards_banner strong {
+    font-size: 16px;
+  }
+
+  .hero_content .inner_hero_content .banner-video-icon img {
+    margin: 0 auto;
+  }
+
+  .hero_content .inner_hero_content .awards_banner img{
+    height: 30px;
+  }
+
+  .hero_content .inner_hero_content .slick-dots{
+    text-align: center;
+    bottom: 0px;
+  }
+
+  .trionfo-usp {
+    padding: 60px 0 60px 0;
+  }
+
+  .who-is-trionfo {
+    padding: 60px 0 60px 0;
+  }
+
+  .who-is-trionfo h1 {
+    font-size: 22px;
+  }
+
+  .client-reviews {
+    padding: 60px 0 0 0;
+  }
+
+  .client-reviews h1 {
+    font-size: 22px;
+    padding-bottom: 30px;
+  }
+
+  .explainer-video {
+    padding: 60px 0 0 0;
+  }
+
+  .explainer-video .overlay {
+    padding: 80px 30px 80px 30px;
+  }
+
+  .get-in-touch {
+    padding: 0 0 100px 0;
+  }
+
+  .get-in-touch h1 {
+    padding-top: 60px;
+  }
+
+  .explainer-video .overlay h3 {
+    font-size: 23px;
+  }
+
+  .explainer-video .overlay p {
+    width: auto;
+    line-height: 26px;
+  }
+
+  .get-in-touch h1 {
+    font-size: 22px;
+    width: auto;
+  }
+  .get-in-touch .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer_trionfo {
+    margin-top: 0;
+  }
+
+  .footer_trionfo img {
+    height: auto;
+  }
+}
+
+@media (max-width: 576px){
+
+  .hero_content .inner_hero_content .overlay {
+    padding: 100px 0 60px 0;
+  }
+
+
+  .hero_content .inner_hero_content .btn-downlad-white-paper {
+    width: 230px;
+    height: 40px;
+    line-height: 3.5;
+    font-size: 12px;
+  }
+
+  .hero_content .inner_hero_content h1 {
+    font-size: 26px;
+  }
+
+  .hero_content .inner_hero_content .awards_banner img {
+    height: 22px;
+  }
+}
