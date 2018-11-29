@@ -45,9 +45,9 @@ nav{
   z-index: 9999;
 }
 
-.nav-up{
+/* .nav-up{
   top: -90px;
-}
+} */
 
 nav .container-fluid {
   padding: 0 30px;
@@ -901,7 +901,7 @@ color: #69707A;
 
 .trionfo-usp .row .col.l4:last-child {
   margin-left: 0;
-  margin-bottom: 0px;
+  /* margin-bottom: 0px; */
 }
 
 /* .brand-logo img {
