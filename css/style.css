@@ -181,7 +181,7 @@ nav ul a.btn{
 }
 
 .sidenav .btn-get-in-touch:hover{
-  background: #0895C1;
+  background: #0895C1 !important;
   box-shadow: none;
 }
 
@@ -775,6 +775,7 @@ input.valid[type=text]:not(.browser-default){
 
 .footer_trionfo img{
   height: auto;
+  max-width: 100%;
 }
 
 .footer_trionfo .footer_content{
@@ -882,13 +883,16 @@ color: #69707A;
 }
 
 .footer_trionfo img {
-  height: 30px;
+  /* height: 30px; */
 }
 
 }
 
-@media (min-width: 993px){
+@media only screen and (min-width: 993px){
 
+  body{
+    background: pink;
+  }
 
 .row .col.l4 {
   margin-left: 0;
@@ -901,7 +905,7 @@ color: #69707A;
 
 .trionfo-usp .row .col.l4:last-child {
   margin-left: 0;
-  margin-bottom: 0spx;
+  margin-bottom: 0px;
 }
 
 /* .brand-logo img {
