@@ -888,7 +888,7 @@ color: #69707A;
 
 }
 
-@media only screen and (min-width: 993px){
+@media (min-width: 993px){
 
 .row .col.l4 {
   margin-left: 0;
