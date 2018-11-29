@@ -266,8 +266,14 @@ nav ul a.btn{
 }
 
 /* Client logos images */
+
+.trionfo_client_logos .logos-of-clients{
+  width: 100%;
+  max-width: 100%;
+}
+
 .trionfo_client_logos img{
-  width: auto;
+  width: 100%;
 }
 
 /* USP section style */
@@ -880,12 +886,13 @@ color: #69707A;
 
 }
 
-@media (max-width: 993px){
+@media (min-width: 993px){
 
-  .trionfo_client_logos img {
-    width: 100%;
+
+.row .col.l4 {
+  margin-left: 0;
 }
-  
+
 .trionfo-usp .row .col.l4 {
     margin-left: 0;
     margin-bottom: 22px;
@@ -896,9 +903,6 @@ color: #69707A;
   margin-bottom: 0spx;
 }
 
-.footer_trionfo img {
-  height: 30px;
-}
 /* .brand-logo img {
   height: 31px;
 }
@@ -929,10 +933,6 @@ nav .btn-get-in-touch{
 
   .nav-flex .btn-get-in-touch{
     display: none;
-  }
-
-  .trionfo_client_logos img {
-    width: 100%;
   }
 
   .trionfo-usp .row .col {
