@@ -148,9 +148,10 @@ nav .btn-get-in-touch{
   margin-left: 30px;
 }
 
-nav .btn-get-in-touch:hover{
+nav ul li .btn-get-in-touch:hover{
   background: #0895C1;
   box-shadow: none;
+  color: #ffffff !important;
 }
 
 nav ul a.btn{
